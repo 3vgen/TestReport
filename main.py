@@ -1,13 +1,8 @@
 import argparse
 import sys
 from reader import read_csv
-from reports.performance import generate_performance_report
 from table import print_table
-
-
-REPORTS = {
-    "performance": generate_performance_report,
-}
+from reports_registry import REPORTS
 
 
 def main():
